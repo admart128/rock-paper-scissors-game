@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Page Title</title>
+</head>
+<body>
+    <button id="rock" onclick="chooseRock()">Rock</button>
+    <button id="paper" onclick="choosePaper()">Paper</button>
+    <button id="scissors" onclick="chooseScissors()">Scissors</button>
+    <div id="demo">
+        
+
+    </div>
+
+<script id="app.js"> 
+
+function chooseRock() {
+document.getElementById("demo").innerHTML = "Rock!";
+}
+
+function choosePaper() {
+document.getElementById("demo").innerHTML = "Paper!";
+}
+
+function chooseScissors() {
+    document.getElementById("demo").innerHTML = "Scissors!"
+}
+</script>
+</body>
+</html>
