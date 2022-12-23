@@ -9,14 +9,17 @@
     </head>
     <body>
         <div>
-        <button id="rock" onclick="playerChoosesRock()">Rock</button>
-        <button id="paper" onclick="playerChooesePaper()">Paper</button>
-        <button id="scissors" onclick="playerChoosesScissors()">Scissors</button>
+        <button id="rock" onclick="playerChoosesRock(); computerChoosesRandom()">Rock</button>
+        <button id="paper" onclick="playerChooesePaper(); computerChoosesRandom()">Paper</button>
+        <button id="scissors" onclick="playerChoosesScissors(); computerChoosesRandom()">Scissors</button>
         </div>
         <div id="playerChoiceDisplay">
 
         </div>    
-    
+    <div id="computerChoiceDisplay">
+
+    </div>
+
     </body>
         
 
@@ -25,6 +28,9 @@
 let playerChoosesRock = () => {document.getElementById("playerChoiceDisplay").innerHTML="Rock!"}
 let playerChooesePaper = () => {document.getElementById("playerChoiceDisplay").innerHTML="Paper!"}
 let playerChoosesScissors = () => {document.getElementById("playerChoiceDisplay").innerHTML="Scissors!"}
+let computerChoice = 4
+let computerChoosesRandom = () => {document.getElementById("computerChoiceDisplay").innerHTML=computerChoice}
+
         </script>
     </body>
 </html>
