@@ -1,31 +1,30 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="UTF-8">
-<title>Page Title</title>
-</head>
-<body>
-    <button id="rock" onclick="chooseRock()">Rock</button>
-    <button id="paper" onclick="choosePaper()">Paper</button>
-    <button id="scissors" onclick="chooseScissors()">Scissors</button>
-    <div id="demo">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+        Rock, Paper, Scissors
+        </title>
+    </head>
+    <body>
+        <div>
+        <button id="rock" onclick="playerChoosesRock()">Rock</button>
+        <button id="paper" onclick="playerChooesePaper()">Paper</button>
+        <button id="scissors" onclick="playerChoosesScissors()">Scissors</button>
+        </div>
+        <div id="playerChoiceDisplay">
+
+        </div>    
+    
+    </body>
         
 
-    </div>
-
-<script id="app.js"> 
-
-function chooseRock() {
-document.getElementById("demo").innerHTML = "Rock!";
-}
-
-function choosePaper() {
-document.getElementById("demo").innerHTML = "Paper!";
-}
-
-function chooseScissors() {
-    document.getElementById("demo").innerHTML = "Scissors!"
-}
-</script>
-</body>
+        <script>
+//const playerChoice = [rock, paper, scissors]
+let playerChoosesRock = () => {document.getElementById("playerChoiceDisplay").innerHTML="Rock!"}
+let playerChooesePaper = () => {document.getElementById("playerChoiceDisplay").innerHTML="Paper!"}
+let playerChoosesScissors = () => {document.getElementById("playerChoiceDisplay").innerHTML="Scissors!"}
+        </script>
+    </body>
 </html>
