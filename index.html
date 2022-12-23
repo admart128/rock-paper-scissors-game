@@ -14,7 +14,6 @@
         <button id="scissors" onclick="playerChoosesScissors(); computerChoosesRandom()">Scissors</button>
         </div>
         <div id="playerChoiceDisplay">
-
         </div>    
     <div id="computerChoiceDisplay">
 
@@ -28,8 +27,14 @@
 let playerChoosesRock = () => {document.getElementById("playerChoiceDisplay").innerHTML="Rock!"}
 let playerChooesePaper = () => {document.getElementById("playerChoiceDisplay").innerHTML="Paper!"}
 let playerChoosesScissors = () => {document.getElementById("playerChoiceDisplay").innerHTML="Scissors!"}
-let computerChoice = 4
-let computerChoosesRandom = () => {document.getElementById("computerChoiceDisplay").innerHTML=computerChoice}
+let computerChoice
+let computerChoosesRandom = () => {
+    computerChoice = Math.floor(Math.random() * 3)
+    if (computerChoice == 0) computerChoice="rock"
+    else if (computerChoice == 1) computerChoice="paper"
+    else if (computerChoice == 2) computerChoice="scissors"
+    document.getElementById("computerChoiceDisplay").innerHTML=computerChoice;
+}
 
         </script>
     </body>
