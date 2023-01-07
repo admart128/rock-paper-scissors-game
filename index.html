@@ -33,8 +33,12 @@
 //const playerChoice = [rock, paper, scissors]
 let playerScore = 0
 let computerScore = 0
-let incrementPlayerScore = () => {playerScore++}
-let incrementComputerScore = () => {computerScore++}
+function incrementPlayerScore() {
+    playerScore++
+}
+function incrementComputerScore() {
+    computerScore++
+}
 
 let playerChoice
 let playerChoosesRock = () => {
@@ -61,28 +65,34 @@ document.getElementById("resultDisplay").innerHTML="Draw!"
 else if (playerChoice == "rock" && computerChoice == "paper") {
 incrementComputerScore()
 document.getElementById("resultDisplay").innerHTML="You Lose!"
+document.getElementById("scoreDisplay").innerHTML= playerScore + "..." + computerScore
 }
 else if (playerChoice == "rock" && computerChoice == "scissors") {
 incrementPlayerScore()
 document.getElementById("resultDisplay").innerHTML="You Win!"
+document.getElementById("scoreDisplay").innerHTML= playerScore + "..." + computerScore
 }
 else if (playerChoice == "paper" && computerChoice == "rock") {
 incrementPlayerScore()
 document.getElementById("resultDisplay").innerHTML="You Win!"
+document.getElementById("scoreDisplay").innerHTML= playerScore + "..." + computerScore
 }
 else if (playerChoice == "paper" && computerChoice == "paper") 
 document.getElementById("resultDisplay").innerHTML="Draw!"
 else if (playerChoice == "paper" && computerChoice == "scissors") {
 incrementComputerScore()
 document.getElementById("resultDisplay").innerHTML="You Lose!"
+document.getElementById("scoreDisplay").innerHTML= playerScore + "..." + computerScore
 }
 else if (playerChoice == "scissors" && computerChoice == "rock") {
 incrementComputerScore() 
 document.getElementById("resultDisplay").innerHTML="You Lose!"
+document.getElementById("scoreDisplay").innerHTML= playerScore + "..." + computerScore
 }
 else if (playerChoice == "scissors" && computerChoice == "paper") {
 incrementPlayerScore()
 document.getElementById("resultDisplay").innerHTML="You Win!"
+document.getElementById("scoreDisplay").innerHTML= playerScore + "..." + computerScore
 }
 else if (playerChoice == "scissors" && computerChoice == "scissors") 
 document.getElementById("resultDisplay").innerHTML="Draw!"
