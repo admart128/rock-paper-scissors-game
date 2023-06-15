@@ -27,7 +27,7 @@ let playerChoosesRock = () => {
     document.getElementById("playerChoiceDisplay").innerHTML="Rock!"
 }
 
-let playerChooesePaper = () => {
+let playerChoosesPaper = () => {
     playerChoice="paper"
     document.getElementById("playerChoiceDisplay").innerHTML="Paper!"
 }
